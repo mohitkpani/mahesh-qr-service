@@ -1,4 +1,3 @@
-
 package com.backend.config;
 
 import org.springframework.context.annotation.Bean;
@@ -21,14 +20,13 @@ public class WebConfig {
                         .allowedOrigins(
                                 "http://localhost:5173",
                                 "http://127.0.0.1:5173",
-                                "http://192.168.31.222:5173"
-                        )
+                                "http://192.168.31.222:5173",
+                                "https://mahesh-qr-service-quickprint-frontend.vercel.app")
                         .allowedMethods(
                                 "GET",
                                 "POST",
                                 "DELETE",
-                                "OPTIONS"
-                        )
+                                "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(false)
                         .maxAge(3600);
