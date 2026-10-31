@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import "./Dashboard.css";
+import "./DashBoard.css";
 
 import {
     Activity,
@@ -341,8 +341,8 @@ function DashBoardPage({ onLogout }) {
                                                     <td>
                                                         <span
                                                             className={`color-badge ${document.printColor === "COLOR"
-                                                                    ? "color-mode"
-                                                                    : "bw-mode"
+                                                                ? "color-mode"
+                                                                : "bw-mode"
                                                                 }`}
                                                         >
                                                             {document.printColor === "COLOR"
