@@ -27,6 +27,6 @@ public class WebSocketConfig
                                 .setAllowedOrigins(
                                                 "http://localhost:5173",
                                                 "http://127.0.0.1:5173",
-                                                "https://mahesh-qr-service-quickprint-frontend.vercel.app");
+                                                "https://mahesh-qr-service-quickprint-fronte.vercel.app");
         }
 }
