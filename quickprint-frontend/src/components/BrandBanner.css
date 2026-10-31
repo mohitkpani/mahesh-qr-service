@@ -1,0 +1,21 @@
+.brand-banner {
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    line-height: 0;
+}
+
+.brand-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .brand-banner img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,32 @@
+# Java / Spring Boot
+**/target/
+*.class
+*.jar
+*.war
+
+# React / Node
+**/node_modules/
+**/dist/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/application-local.properties
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Customer uploads and local storage
+**/quickprint-storage/
+**/uploads/
+**/jobs.json
+
+# Operating system
+.DS_Store
+Thumbs.db

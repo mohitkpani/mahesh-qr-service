@@ -1,0 +1,202 @@
+/* =========================================
+   MDS - MAHESH DIGITAL STUDIO
+   SHARED APPLICATION STYLES
+========================================= */
+
+:root {
+  --primary: #075bea;
+  --primary-dark: #0647bd;
+  --text: #101d3a;
+  --muted: #66738c;
+  --border: #d9e3f2;
+  --surface: #ffffff;
+}
+
+/* Shared brand layout */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-logo {
+  width: 105px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  background: white;
+  color: var(--primary);
+  border-radius: 12px;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  flex-shrink: 0;
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: clamp(20px, 3vw, 30px);
+}
+
+.brand-text p {
+  margin: 7px 0 0;
+  opacity: 0.9;
+}
+
+/* Customer page header */
+
+.app-header {
+  min-height: 145px;
+  padding: 25px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background: linear-gradient(110deg,
+      #0752df,
+      #0785f8,
+      #16a1ff);
+}
+
+.header-printer {
+  opacity: 0.95;
+}
+
+/* Shared footer */
+
+.app-footer {
+  padding: 22px 15px;
+  text-align: center;
+  color: var(--muted);
+  background: #e8f2ff;
+  font-size: 12px;
+}
+
+.app-footer p {
+  margin: 0 0 6px;
+}
+
+/* Admin login page */
+
+.login-page {
+  min-height: 100vh;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #edf5ff, #e4efff);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(24, 67, 130, 0.1);
+}
+
+.login-logo {
+  margin: 0 auto;
+}
+
+.login-card h1,
+.login-card>p {
+  text-align: center;
+  margin: 0;
+}
+
+.login-card>p {
+  color: var(--muted);
+  margin-bottom: 15px;
+}
+
+.login-card>label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 12px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--muted);
+  background: white;
+}
+
+.login-input input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px;
+  border: 0;
+  border-radius: 9px;
+  outline: none;
+  color: var(--text);
+  background: transparent;
+}
+
+.login-input:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(7, 91, 234, 0.1);
+}
+
+.back-link {
+  border: 0;
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* Shared loading animation */
+
+.spin {
+  animation: mds-spin 1s linear infinite;
+}
+
+@keyframes mds-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Shared responsive styles */
+
+@media (max-width: 600px) {
+  .app-header {
+    min-height: 115px;
+    padding: 20px 15px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-logo {
+    width: 75px;
+    height: 52px;
+    font-size: 29px;
+  }
+
+  .brand-text h1 {
+    font-size: 17px;
+  }
+
+  .brand-text p {
+    font-size: 12px;
+  }
+
+  .header-printer svg {
+    width: 30px;
+  }
+
+  .login-card {
+    padding: 25px 20px;
+  }
+}

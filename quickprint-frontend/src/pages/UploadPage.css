@@ -1,0 +1,404 @@
+/* =================================
+   MDS CUSTOMER UPLOAD PAGE
+================================= */
+
+.upload-page {
+    width: 100%;
+    min-height: calc(100vh - 145px);
+    padding: 35px 16px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #edf5ff, #e4efff);
+}
+
+.upload-card {
+    width: 100%;
+    max-width: 650px;
+    height: fit-content;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #f7faff;
+    border: 1px solid #cbdffb;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(24, 67, 130, 0.08);
+}
+
+/* =================================
+   SHOP LOGO INSIDE UPLOAD CARD
+================================= */
+
+.upload-brand {
+    width: 100%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.upload-brand img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* =================================
+   SECTION HEADINGS
+================================= */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0 16px;
+    color: #075bea;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #101d3a;
+    font-size: 19px;
+}
+
+/* =================================
+   CUSTOMER FORM
+================================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 18px 0;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 1px solid #c6dafa;
+    border-radius: 9px;
+    outline: none;
+    background: #ffffff;
+    color: #101d3a;
+}
+
+.form-group input:focus {
+    border-color: #075bea;
+    box-shadow: 0 0 0 3px rgba(7, 91, 234, 0.1);
+}
+
+/* =================================
+   FILE UPLOAD AREA
+================================= */
+
+.file-drop-area {
+    min-height: 155px;
+    border: 2px dashed #83b5fa;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #075bea;
+    cursor: pointer;
+    background: #eaf3ff;
+    transition: 0.2s;
+}
+
+.file-drop-area:hover {
+    border-color: #075bea;
+    background: #deecff;
+}
+
+.file-drop-area strong {
+    color: #101d3a;
+    font-size: 16px;
+}
+
+.file-drop-area span {
+    color: #66738c;
+    font-size: 13px;
+}
+
+/* =================================
+   SELECTED FILES
+================================= */
+
+.selected-section {
+    margin-top: 25px;
+}
+
+.selected-section h3 {
+    font-size: 16px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 13px;
+    margin: 9px 0;
+    border: 1px solid #c9ddf7;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.file-icon {
+    color: #075bea;
+}
+
+.file-info {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.file-info strong {
+    overflow-wrap: anywhere;
+    font-size: 14px;
+}
+
+.file-info span {
+    color: #66738c;
+    font-size: 12px;
+}
+
+.remove-file {
+    border: 0;
+    background: transparent;
+    color: #e22d36;
+    padding: 7px;
+    cursor: pointer;
+}
+
+/* =================================
+   PRINT COLOR OPTIONS
+================================= */
+
+.color-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.color-option {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid #c6dafa;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #101d3a;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.color-option.selected {
+    border: 1.5px solid #075bea;
+    background: #dcecff;
+    color: #075bea;
+}
+
+.radio-dot {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    border: 2px solid #aab7cb;
+    border-radius: 50%;
+}
+
+.color-option.selected .radio-dot {
+    border: 5px solid #075bea;
+}
+
+/* =================================
+   COPIES SELECTOR
+================================= */
+
+.copies-section {
+    margin-top: 25px;
+}
+
+.copies-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quantity-button {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border: 0;
+    border-radius: 9px;
+    color: white;
+    background: #075bea;
+    cursor: pointer;
+}
+
+.quantity-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.copies-value {
+    min-width: 75px;
+    padding: 13px;
+    text-align: center;
+    border: 1px solid #c6dafa;
+    border-radius: 9px;
+    background: #ffffff;
+    font-weight: 700;
+}
+
+/* =================================
+   UPLOAD BUTTON
+================================= */
+
+.upload-button {
+    width: 100%;
+    min-height: 55px;
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(110deg, #075bea, #1595f5);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.upload-button:hover {
+    background: #0647bd;
+}
+
+.upload-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* =================================
+   PRIVACY NOTE
+================================= */
+
+.privacy-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    padding: 13px;
+    border-radius: 9px;
+    background: #dcecff;
+    color: #174477;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* =================================
+   ALERT MESSAGES
+================================= */
+
+.alert {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.error-alert {
+    color: #a51f2a;
+    background: #fff0f0;
+}
+
+.success-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    color: #176b3a;
+    background: #eaf9ef;
+}
+
+/* =================================
+   LOADING ANIMATION
+================================= */
+
+.spin {
+    animation: upload-spin 1s linear infinite;
+}
+
+@keyframes upload-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =================================
+   TABLET AND MOBILE
+================================= */
+
+@media (max-width: 768px) {
+    .upload-page {
+        padding: 25px 14px;
+    }
+
+    .upload-card {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .upload-page {
+        min-height: calc(100vh - 115px);
+        padding: 15px 10px;
+    }
+
+    .upload-card {
+        padding: 19px 15px;
+        border-radius: 13px;
+        background: #edf5ff;
+    }
+
+    .upload-brand {
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+
+    .section-heading h2 {
+        font-size: 17px;
+    }
+
+    .color-options {
+        gap: 8px;
+    }
+
+    .color-option {
+        gap: 5px;
+        padding: 8px 4px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .upload-card {
+        padding: 15px 12px;
+    }
+}

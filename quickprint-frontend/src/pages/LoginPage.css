@@ -1,0 +1,229 @@
+/* =================================
+   MDS ADMIN LOGIN PAGE
+================================= */
+
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    background: linear-gradient(135deg,
+            #e5f1ff,
+            #f4f8ff);
+}
+
+/* =================================
+   LOGIN CARD
+================================= */
+
+.login-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid #d4e4fa;
+    border-radius: 18px;
+
+    box-shadow: 0 12px 35px rgba(24, 67, 130, 0.12);
+}
+
+/* =================================
+   SHOP BANNER INSIDE LOGIN CARD
+================================= */
+
+.login-brand {
+    width: 100%;
+    margin-bottom: 8px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.login-brand img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* =================================
+   LOGIN HEADING
+================================= */
+
+.login-card h1 {
+    margin: 0;
+    color: #101d3a;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.login-card>p {
+    margin: 0 0 12px;
+    color: #66738c;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* =================================
+   LABELS
+================================= */
+
+.login-card>label {
+    color: #24334e;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =================================
+   INPUT FIELDS
+================================= */
+
+.login-input {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 13px;
+    box-sizing: border-box;
+
+    border: 1px solid #d9e3f2;
+    border-radius: 9px;
+
+    color: #075bea;
+    background: #f8fbff;
+    transition: 0.2s;
+}
+
+.login-input:focus-within {
+    border-color: #075bea;
+    box-shadow: 0 0 0 3px rgba(7, 91, 234, 0.1);
+}
+
+.login-input input {
+    width: 100%;
+    min-width: 0;
+    padding: 14px 12px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+    color: #101d3a;
+    font-size: 14px;
+}
+
+.login-input input::placeholder {
+    color: #94a3b8;
+}
+
+/* =================================
+   LOGIN BUTTON
+================================= */
+
+.login-card .upload-button {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 12px;
+    justify-content: center;
+}
+
+/* =================================
+   BACK LINK
+================================= */
+
+.back-link {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    background: transparent;
+
+    color: #075bea;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* =================================
+   ERROR MESSAGE
+================================= */
+
+.login-error {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 12px;
+
+    border-radius: 8px;
+    background: #fff0f0;
+    color: #b42332;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 768px) {
+    .login-card {
+        max-width: 450px;
+        padding: 24px;
+    }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+    .login-page {
+        padding: 20px 14px;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 430px;
+        padding: 20px 16px;
+        gap: 13px;
+        border-radius: 14px;
+    }
+
+    .login-card h1 {
+        font-size: 23px;
+    }
+
+    .login-brand {
+        margin-bottom: 5px;
+    }
+
+    .login-input {
+        min-height: 48px;
+    }
+}
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 360px) {
+    .login-card {
+        padding: 18px 13px;
+    }
+}
