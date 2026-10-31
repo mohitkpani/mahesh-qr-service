@@ -4,7 +4,7 @@
 
 <img src="quickprint-frontend/public/mahesh-banner.png" 
 alt="Mahesh Digital Studio Logo"
-height="100"
+height="120"
  width="220" />
 
 ### 🖨️ Upload. Manage. Print. Simplify.
